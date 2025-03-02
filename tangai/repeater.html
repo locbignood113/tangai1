@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ôi tuyệt vời quá!</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8c6d2;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #ff77c2;
+      font-size: 2em;
+      margin-top: 40px;
+    }
+    .info-text {
+      font-size: 1.2em;
+      color: #ff77c2;
+      margin-top: 8px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ff4d94;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 10px;
+      width: 150px;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #ff3385;
+    }
+    
+    /* Hiệu ứng đặc biệt cho nút "Đồng ý" */
+    .btn-agree {
+      position: relative;
+      font-weight: bold;
+      font-size: 1.4em;
+      padding: 12px 24px;
+      border: 3px solid white;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      animation: glow 1s infinite alternate;
+    }
+    .btn-agree:hover {
+      transform: scale(1.1);
+      animation: shake 0.3s infinite;
+    }
+
+    /* Phát sáng */
+    @keyframes glow {
+      0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
+      100% { box-shadow: 0 0 25px rgba(255, 255, 255, 1); }
+    }
+
+    /* Rung nhẹ khi hover */
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-2px); }
+      50% { transform: translateX(2px); }
+      75% { transform: translateX(-2px); }
+      100% { transform: translateX(2px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Ôi tuyệt vời quá!</h1>
+  
+  <div class="info-texts">
+    <p class="info-text">Mình thấy bạn cute vãiiiiii</p>
+    <p class="info-text">Cho mình xin Info bạn nhé :3</p>
+  </div>
+
+  <!-- Khi bấm nút "Đồng ý" sẽ chuyển hướng đến true.html -->
+  <button class="btn btn-agree" onclick="window.location.href='true.html'">Đồng ý</button>
+  
+  <!-- Khi bấm "Hong" sẽ chuyển hướng đến nhay1.html -->
+  <button class="btn" onclick="window.location.href='nhay1.html'">Hong</button>
+
+</body>
+</html>

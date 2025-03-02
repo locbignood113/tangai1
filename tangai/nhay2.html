@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thật đó màaaa 🥺</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe0f0;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #ff4081;
+      font-size: 2.2em;
+      margin-top: 40px;
+    }
+    .info-text {
+      font-size: 1.3em;
+      color: #d81b60;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .emoji {
+      font-size: 4em;
+      margin: 15px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ff4d94;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 12px;
+      cursor: pointer;
+      border: none;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #ff3385;
+    }
+    .btn-agree {
+      font-weight: bold;
+      font-size: 1.4em;
+      padding: 12px 30px;
+      border: 3px solid white;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      animation: glow 1s infinite alternate;
+    }
+    .btn-agree:hover {
+      transform: scale(1.1);
+      animation: shake 0.3s infinite;
+    }
+    /* Hiệu ứng phát sáng */
+    @keyframes glow {
+      0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
+      100% { box-shadow: 0 0 25px rgba(255, 255, 255, 1); }
+    }
+    /* Hiệu ứng rung */
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-2px); }
+      50% { transform: translateX(2px); }
+      75% { transform: translateX(-2px); }
+      100% { transform: translateX(2px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Thật đó màaaa 🥺</h1>
+  
+  <div class="emoji">🥺🥺👉👈</div>
+
+  <p class="info-text">Năn nỉ đóoooo, bạn cho mình xin Info nhaaaaa 🥹</p>
+  <p class="info-text">Đừng để mình khóc nữa mà huhuhu</p>
+
+  <!-- Khi bấm "Đồng ý" sẽ chuyển đến true.html -->
+  <button class="btn btn-agree" onclick="window.location.href='true.html'">Đồng ý 😍</button>
+  
+  <!-- Khi bấm "Hong" sẽ chuyển đến nhay3.html -->
+  <button class="btn" onclick="window.location.href='nhay3.html'">Hong 😭</button>
+
+</body>
+</html>

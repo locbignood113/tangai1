@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bạn có người yêu chưa?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8c6d2;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #ff77c2;
+      font-size: 2em;
+      margin-top: 50px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #ff4d94;
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border-radius: 30px;
+      text-decoration: none;
+      margin: 10px;
+      width: 150px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ff3385;
+    }
+  </style>
+  <script>
+    function redirect(page) {
+      window.location.href = page;
+    }
+  </script>
+</head>
+<body>
+  <h1>Bạn có người yêu chưa?</h1>
+  <button class="btn" onclick="redirect('false.html')">Có rùi</button>
+  <button class="btn" onclick="redirect('repeater.html')">Chưaa</button>
+</body>
+</html>
